@@ -91,7 +91,6 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: greenyellow;
     background-image: url(kayu1.jpg);
     border: 7px solid rgb(85, 42, 0);
     border-radius: 15px;
@@ -128,7 +127,7 @@ body{
 }
 
 
-@media only screen and (max-width : 900px) {
+@media only screen and (max-width : 1024px) {
     .container{
         width: 640px;
         height : 400px;
@@ -142,19 +141,34 @@ body{
     }
 }
 
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 900px) {
     .container{
         width: 560px;
         height : 350px;
     }
     .front{
-        border: transparent;
         border: 4px solid rgb(85, 42, 0);
     }
+    .flip{
+        border: transparent;
+        box-shadow: -1px -1px 3px rgba(77, 77, 77, 0.7);
+    }
+}
+
+@media only screen and (max-width : 690px) {
+    .container{
+        width: 480px;
+        height : 300px;
+    }
+    .front{
+        
+        border: 3px solid rgb(85, 42, 0);
+    }
     .timer{
-        font-size: 40px;
+        font-size: 36px;
     }
     .flip{
+        border: transparent;
         box-shadow: -1px -1px 3px rgba(77, 77, 77, 0.7);
     }
 }
